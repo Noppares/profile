@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+    display: line-block;
+    text-align:center;
+}
+
+.flex-container {
+    display: flex;
+    /*flex-direction:row;
+    flex-wrap:nowrap;
+    align-items: baseline;
+    align-content: space-around;
+    flex:flex-grow,flex-shrink,flex-basis;
+    */
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    border:1px solid#111;
+    margin:10px;
+}
+
+.topic{
+    width:100%;
+    font-weight: 600;
+    font-size:24px;
+}
+.sub-topic{
+    width:100%;
+}
+/*justify-content*/
+.flex-justify-flex-start{
+    justify-content: flex-start;
+}
+.flex-justify-flex-end{
+    justify-content: flex-end;
+}
+.flex-justify-flex-center{
+    justify-content: center;
+}
+.flex-justify-flex-space-between{
+    justify-content:space-between;
+}
+.flex-justify-flex-space-around{
+    justify-content:space-around;
+}
+
+/* ITEM FLEX*/
+.flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4, .flex-item-5{
+    width:100px;
+    height:100px;
+    background:#ccc;
+    margin:10px;
+}
+.flex-item-N{
+    order: 0;/*เรียงลำดับไอเท็ม ใช้จำนวนทั้งหมดใน div*/
+    flex-grow: 0;/*ขยายตัวมีแค่ 0,1*/
+    flex-shrink: 0;/*การหดตัว*/
+    align-self:flex-start;/*flex-end,center*/
+}
