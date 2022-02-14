@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style/masterslider.css" />
+	<link rel="stylesheet" href="skins/default/style.css" />
+    <script src="jquery.easing.min.js"></script> 
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="masterslider.min.js"></script>
+	<script>
+        $(document).ready(function(){   
+
+            var slider = new MasterSlider();
+             slider.setup('masterslider' , {
+                 width:1597,
+                 height:520,
+                 space:1,
+                 fullwidth:true,
+                 loop:true,
+                 preload:0,
+                 autoplay:true
+            });
+            slider.control('arrows'); 
+        }); 
+    </script>
+</head>
+<body>
+	<!-- masterslider -->
+<div class="master-slider ms-skin-default" id="masterslider">
+    <!-- new slide -->
+    <div class="ms-slide">
+         
+        <!-- slide background -->
+        <img src="blank.gif" data-src="http://www.masterslider.com/images/slide4/bg.jpg" alt="lorem ipsum dolor sit"/>     
+         
+        <!-- slide text layer -->
+        <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+            Lorem ipsum dolor sit amet
+        </div>
+         
+    </div>
+    <!-- end of slide -->
+     
+    <!-- new slide -->
+    <div class="ms-slide">
+         
+        <!-- slide background -->
+        <img src="blank.gif" data-src="http://www.masterslider.com/images/slide4/bg.jpg" alt="lorem ipsum dolor sit"/>     
+         
+        <!-- slide text layer -->
+        <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+            Lorem ipsum dolor sit amet
+        </div>
+         
+        <!-- linked slide -->
+        <a href="http://codecanyon.net/user/averta">Averta</a>
+         
+    </div>
+    <!-- end of slide -->
+     
+    <!-- new slide -->
+    <div class="ms-slide">
+         
+        <!-- slide background -->
+        <img src="blank.gif" data-src="http://www.masterslider.com/images/slide4/bg.jpg" alt="lorem ipsum dolor sit"/>     
+         
+        <!-- slide text layer -->
+        <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+            Lorem ipsum dolor sit amet
+        </div>
+         
+        <!-- youtube video -->
+        <a href="http://www.youtube.com/embed/YHWkro9-e9Q?hd=1&wmode=opaque&controls=1&showinfo=0" data-type="video">Youtube video</a>
+         
+    </div>
+    <!-- end of slide -->
+ 
+</div>
+<!-- end of masterslider -->
+</body>
+</html>
