@@ -1,5 +1,5 @@
 $('.section-one').parallax({imageSrc: 'images/eart.jpg'});
-$('.section-two').parallax({imageSrc: 'images/sun.jpg'});
+$('.section-two').parallax({imageSrc: 'images/space.jpg'});
 // const backgroundVideo = new BackgroundVideo('.sv-side', {
 //   src: [
 //     'video/Seoul-traffic.mp4'
