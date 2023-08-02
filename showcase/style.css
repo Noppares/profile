@@ -57,8 +57,8 @@ article {
   }
 }
 .imgLists {
-  display: none;
-  position: absolute;
+  /* display: none;
+  position: absolute; */
 }
 .capIframe {
   width: 450px;
@@ -71,4 +71,5 @@ article {
   transform: scale(0.25);
   transform-origin: top left;
   transition: opacity 0.4s linear 0.1s;
+  display: none;
 }
