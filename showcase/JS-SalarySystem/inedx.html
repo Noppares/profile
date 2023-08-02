@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html>
+<head>
+  <title>Salary System</title> 
+</head>
+<body>
+  <h1>Salary System</h1>
+  <form id="salaryForm">
+    <label for="employeeName">Employee Name:</label>
+    <input type="text" id="employeeName" required>
+    <br>
+    <label for="salaryAmount">Salary Amount:</label>
+    <input type="number" id="salaryAmount" required>
+    <br>
+    <button type="submit" class="btn">Add Employee</button>
+  </form>
+  <table id="salaryTable">
+    <thead>
+      <tr>
+        <th>Employee Name</th>
+        <th>Salary Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <button id="exportBtn" class="btn">Export to Excel</button>
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

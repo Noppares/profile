@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+  h1{
+    display: inline-flex;
+    font-family: "impact", sans-serif;
+    background: url("background.png");
+    font-size: 8rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #5b728a54;
+    animation: move 30s linear infinite;
+    letter-spacing: .3rem;
+  }
+  @keyframes move{
+    form{background-position: 0 80%;}
+    to{background-position: 100% 50%;}
+  }

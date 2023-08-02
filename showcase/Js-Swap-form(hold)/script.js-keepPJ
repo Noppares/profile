@@ -1,0 +1,21 @@
+const signupButton = document.getElementById("signup-button"),
+  loginButton = document.getElementById("login-button"),
+  userforms = document.getElementById("groupBounc");
+
+signupButton.addEventListener(
+  "click",
+  () => {
+    userforms.classList.remove("bouncRight");
+    userforms.classList.add("bouncLeft");
+  },
+  false
+);
+
+loginButton.addEventListener(
+  "click",
+  () => {
+    userforms.classList.remove("bouncLeft");
+    userforms.classList.add("bouncRight");
+  },
+  false
+);

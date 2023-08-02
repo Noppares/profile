@@ -1,0 +1,11 @@
+.waitUpload{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+align-items: center;
+}
+#imgfile{
+    filter: drop-shadow(0 0 20px #111);
+    box-shadow: 0 0 20px red;
+}

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#ftd {
+  font-size: 24px;
+  width: 60%;
+  display: inline-block;
+}
+#ftd > span {
+  opacity: 0%;
+  display: inline-block;
+  animation: 0.8s ease-out forwards show;
+  animation-delay: calc(0.4s * var(--x));
+}
+@keyframes show {
+  0% {
+    opacity: 0%;
+    transform: translateY(-0.5em);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+#ftdc {
+  font-size: 24px;
+  width: 60%;
+  display: inline-block;
+  columns: 200px 2;
+  column-gap: 20px;
+}
+#ftdc > p {
+  opacity: 0%;
+  display: inline-block;
+  animation: 0.8s ease-out forwards show;
+  animation-delay: calc(0.03s * var(--x));
+  padding: 0;
+  margin: -2.5px;
+}
+

@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:#222;
+}
+.full-page{
+    width: 100%;
+    height: 100%;
+}
+.main-sv-scroll{
+    background:#222;
+    min-height: 200vh;
+    position: relative;
+}
+.sub-main-sv{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.sub-main-sv .sv-side{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sub-main-sv .sv-side#sv-side1{
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.sub-main-sv .sv-side#sv-side2{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%);
+}
+.sub-main-sv .sv-side video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3000;
+}
+.sv-content{
+    color:#fff;
+    padding:50px;
+    height: 100vh;
+    margin-top:200vh;
+}
+.sv-content h2{
+    font-size: 3em;
+}
+.sv-content p{
+    font-size:1.2em;
+}
+.sba-main{
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+}
+.sba-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sba-container h2{
+    color:#fff;
+    text-align: center;
+    font-size: 12vw;
+    line-height: 1em;
+    z-index: 1000;
+    font-weight: 900;
+}
+.sba-container h2 span{
+    font-size: 0.2em;
+    line-height: 0.4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sba-block{
+    position: absolute;    
+}
+.sba-block img{
+    max-width: 50px;
+}

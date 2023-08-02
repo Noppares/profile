@@ -1,0 +1,38 @@
+
+#square,
+#circle{
+    width: 100px;
+    height: 100px;
+    margin:10px 10px 30px;
+    background-color:#2196f3;
+}
+#circle{
+    border-radius: 50%;    
+}
+.animation {
+    animation-name: move-and-change-color;
+    animation-duration: 0.4s;
+    animation-fill-mode:forwards;
+
+}
+@keyframes move-and-change-color{
+    0%{
+        transform: translateX(0);
+    }
+    80%{
+        transform: translateX(100px);
+        background-color: #2196f3;
+    }
+    100%{
+        transform: translateX(100px);
+        background-color: #ef5350;
+    }
+}
+#spinner{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid#e2e2e2;
+    border-top-color:#186aab;
+    margin:50px;
+}

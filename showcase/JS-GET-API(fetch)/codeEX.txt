@@ -1,0 +1,9 @@
+fetch("https://reqres.in/api/users?page=2")
+      .then((res) => {
+        return res.json();
+      })
+      .then((resJson) => {
+        setUsers(resJson.data);
+      });
+      return()=>{}
+  }

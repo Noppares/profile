@@ -1,0 +1,27 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  

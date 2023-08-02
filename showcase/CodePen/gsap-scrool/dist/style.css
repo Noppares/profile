@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+body p {
+  line-height: 1.4;
+}
+
+.forSmallViewports {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .forSmallViewports {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.mainSection {
+  display: none;
+  background-color: #101010;
+  font-family: "Raleway", sans-serif;
+  color: #f1f1f1;
+}
+@media (min-width: 1024px) {
+  .mainSection {
+    display: block;
+  }
+}
+.mainSection .wrapper {
+  max-width: 1024px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.mainSection .bannerWrapper {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  padding-top: 200px;
+}
+.mainSection .bannerWrapper .bgWrapper {
+  z-index: -1;
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.mainSection .bannerWrapper .bgWrapper figure {
+  position: relative;
+  margin: 0px;
+}
+.mainSection .bannerWrapper .bgWrapper figure img {
+  width: 100%;
+}
+.mainSection .bannerWrapper .bgWrapper .overlay {
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  bottom: -50px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 0.9) 60%, #101010 90%);
+}
+.mainSection .bannerWrapper header {
+  margin-top: 200px;
+  text-align: center;
+}
+.mainSection .bannerWrapper header h1 {
+  font-family: "Raleway", sans-serif;
+  color: #f1f1f1;
+  font-size: 46px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.mainSection .bannerWrapper header p {
+  max-width: 420px;
+  margin: 0 auto;
+}

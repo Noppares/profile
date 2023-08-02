@@ -1,0 +1,45 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  height: 300px;
+}
+#c1,
+#c2,
+#c3,
+#c4 {
+  width: 200px;
+  height: 300px;
+  transition: all 0.3s;
+  position: absolute;
+  border: 2px solid black;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.main:hover #c1 {
+  transform: translateX(-100px) rotate(-40deg);
+}
+.main:hover #c2 {
+  transform: translateX(-50px) rotate(-30deg);
+}
+.main:hover #c3 {
+  transform: translateX(0px) rotate(-20deg);
+}
+.main:hover #c4 {
+  transform: translateX(50px) rotate(-10deg);
+}
+#c1:hover {
+  transform: translate(-150px) rotate(0deg) !important;
+}
+#c2:hover {
+  transform: translate(-100px) rotate(0deg) !important;
+}
+#c3:hover {
+  transform: translate(-50px) rotate(0deg) !important;
+}
+#c4:hover {
+  transform: translate(50px) rotate(0deg) !important;
+}
