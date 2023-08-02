@@ -63,6 +63,7 @@ article {
 .capIframe {
   width: 450px;
   height: 200px;
+  display: none;
 }
 .contentIframe {
   width: calc(200% + 5px);
